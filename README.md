@@ -9,7 +9,11 @@ En este documento Encontrara prueba Tecnica desarrollada en Angular y consumo de
 Asegúrate de tener instalado Node.js en tu computadora.
 
 Clona este repositorio.
-Ejecuta npm install para instalar las dependencias.
+Ejecutar
+-npm install
+-npm install --legacy-peer-deps
+-npm install --force
+-para instalar las dependencias.
 Ejecuta ng serve para iniciar el servidor de desarrollo. Navega a http://localhost:4200/. La aplicación se recargará automáticamente si realizas cambios en los archivos fuente.
 Uso
 Describe cómo utilizar el proyecto y cualquier funcionalidad relevante.
