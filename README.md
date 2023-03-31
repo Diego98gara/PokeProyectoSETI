@@ -1,27 +1,29 @@
 # PokeProyectoSeti
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Este proyecto fue generado con Angular CLI: 15.2.4.
 
-## Development server
+# Descripción
+En este documento Encontrara prueba Tecnica desarrollada en Angular y consumo de PokeApi 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Instalación
+Asegúrate de tener instalado Node.js en tu computadora.
 
-## Code scaffolding
+Clona este repositorio.
+Ejecuta npm install para instalar las dependencias.
+Ejecuta ng serve para iniciar el servidor de desarrollo. Navega a http://localhost:4200/. La aplicación se recargará automáticamente si realizas cambios en los archivos fuente.
+Uso
+Describe cómo utilizar el proyecto y cualquier funcionalidad relevante.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Contribución
+Si deseas contribuir al proyecto, sigue estos pasos:
 
-## Build
+Haz un fork del repositorio.
+Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
+Realiza tus cambios y haz commit de ellos (git commit -m 'Agrega nueva característica').
+Empuja tus cambios a la rama (git push origin feature/nueva-caracteristica).
+Abre un Pull Request.
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT - ve el archivo LICENSE para más detalles.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Contacto
+Si tienes alguna pregunta o sugerencia sobre el proyecto, puedes contactarme a través de mi correo electrónico da.98gara@outlook.com
