@@ -1,0 +1,33 @@
+.pokeEstiloArena {
+    background-image: url("../../assets/imagenes/dnlz6c3xni951.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pokEstilo {
+    display: flex;
+    align-items: center;
+}
+
+.pokeestilomargin {
+    margin-left: 4%;
+}
+
+
+
+.pokeestilo {
+    background-image: url('../../assets/imagenes/dnlz6c3xni951.jpg');
+    background-size: 100%;
+
+}
+
+.pokeestilotable {
+    margin-left: -4%;
+    font-size: 13px;
+}
+
+.panel-activo {
+    -webkit-box-shadow: 3px 0px 45px 6px rgba(227, 29, 85, 1);
+    -moz-box-shadow: 3px 0px 45px 6px rgba(227, 29, 85, 1);
+    box-shadow: 3px 0px 45px 6px rgba(227, 29, 85, 1);
+}

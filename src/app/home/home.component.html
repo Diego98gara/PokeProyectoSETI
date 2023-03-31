@@ -1,0 +1,80 @@
+<div class="pokeestilo">
+  <div class="container text-center">
+    <div class="row">
+      <div
+        class="col-sm-6 col-md-4 col-lg-3 mt-5"
+        *ngFor="let pokearreglo of pokearreglo; let i = index"
+      >
+        <div
+          class="card"
+          [ngClass]="{
+            'panel-activo': panelesActivos.includes(
+              'estadisticas' + pokearreglo.id
+            )
+          }"
+        >
+          <img
+            class="card-img-top"
+            src="{{ pokearreglo.imagen }}"
+            (click)="toggleEstadisticasdos(pokearreglo.id, pokearreglo)"
+          />
+
+          <div class="card-body">
+            <h5
+              class="card-title"
+              (click)="toggleEstadisticasdos(pokearreglo.id, pokearreglo)"
+            >
+              {{ pokearreglo.nombre }}
+            </h5>
+            <p class="card-text"><strong>Id:</strong>{{ pokearreglo.id }}</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Tipo:</strong>
+                <div *ngFor="let obj of pokearreglo?.tipos">
+                  <span> {{ obj.type.name }}</span>
+                </div>
+              </li>
+              <li class="list-group-item" *ngIf="panelesActivos">
+                <div>
+                  <ngb-accordion [activeIds]="panelesActivos">
+                    <ngb-panel id="estadisticas{{ pokearreglo.id }}">
+                      <ng-template ngbPanelTitle> Atributos </ng-template>
+                      <ng-template ngbPanelContent>
+                        <ng-container>
+                          <table class="table pokeestilotable">
+                            <thead>
+                              <tr>
+                                <th>nombre</th>
+                                <th>estadística base</th>
+                                <th>esfuerzo</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let obj of pokearreglo?.stats">
+                                <td>{{ obj.stat.name }}</td>
+                                <td>{{ obj.base_stat }}</td>
+                                <td>{{ obj.effort }}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            *ngIf="tama === 2"
+                            (click)="batalla()"
+                          >
+                            Iniciar batalla
+                          </button>
+                        </ng-container>
+                      </ng-template>
+                    </ngb-panel>
+                  </ngb-accordion>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.pokeIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../../assets/imagenes/pokebola.png') no-repeat center center;
+    background-size: contain;
+}
+
+.pokEstilo {
+    display: flex;
+    align-items: center;
+}
+.pokeEstilodos{
+    padding: 8px;
+    margin-right: 0px !important;
+    color: #fff;
+}
